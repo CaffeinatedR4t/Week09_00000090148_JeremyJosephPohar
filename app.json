@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "week9_app",
+    "slug": "week9_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to capture photos.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to select images.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to save images into your gallery."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow this app to use your camera."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow this app to access your photos."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
